@@ -458,7 +458,8 @@ ul p{
         margin: 0;
         padding: 0;
         padding-top:0;
-        color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
         font-size: 30px;
         width: 90%;
         margin: 0;
@@ -471,7 +472,7 @@ ul p{
         font-size: 20px;
         font-weight: 550;
         width: 90%;
-        color: rgb(0, 0, 0);
+        color: white;
         margin: 0;
 
     }
@@ -482,18 +483,17 @@ ul p{
         top: -100px;
         left: -20px;
         text-align: left;
-        color: rgb(0, 0, 0);
+        color: white;
     }
     .item-abs .h1{
         padding-right: 5%;
-        
+        text-shadow: 1px 1px 1px black;
     }
     .list-div{
         padding: 0;
         margin: 0;
         top: 110%;
     }
-
     .container1{
         display: none;
     }
@@ -515,12 +515,8 @@ ul p{
         margin-top: 10px;
         margin-left: -28px;
     }
-    .item1 .h1{
-        color: black;
-    }
-    .item .h1{
-        text-align: left;
-    }
+    
+
     
 
 }
