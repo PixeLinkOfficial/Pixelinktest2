@@ -1,282 +1,605 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/x3.css">
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+body div,body p,body h1{
+    font-family: "Roboto", serif;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.img-logo{
+    width: 160px;
+}
+.img-ard{
+    width: 15px;
+}
+
+.div-logo{
+    margin-left: 50px;
+}
+
+.div-buts{
+    margin: 0;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-Try-now{
+    margin-left: 200px;
+}
+
+.div-lang{
+    margin-right: 50px;
+}
+
+.mobile-option-bar{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    pointer-events: none;
+}
+.mdiv1{
+    position: relative;
+}
+.mobile-div-lang{
+    position: absolute;
+    bottom: -305px;
+    right: -15px;
+    background-color: white;
+    width: 100px;
+    height: 300px;
+    padding-left: 70px;
+    padding-right: 170px;
+    border-radius: 20px;
+    white-space: nowrap;
+    border: 1px solid black;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+
+}
+.mmm1,.mmm2{
+    margin-bottom: 8px;
+}
+
+.mobile-div-buts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
+}
+
+.mobile-image{
+    height: 34px;
+}
+.mobile-menu-button{
+    border: none;
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+.mobile-div-but select{
+    font-size: 17px;
+}
+
+
+
+
+
+.div-but{
+    padding-left: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+}
+.div-lang select{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+
+.item1 .h1, .item2 .h1 ,.item3 .h1{
+    font-size: 50px;
+    font-weight: 550;
+    width: 640px;
+    color: white;
+    margin: 0;
+}
+.list-div{
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    display: inline-block;
+    color: white;
+}
+
+ul{
+    padding: 0;
+    margin: 50px 0 0 135px;
+    display: block;
+}
+ul li{
+    list-style-image: url(check.png);
+    margin-bottom: 2px;
+}
+ul p{
+    padding: 0;
+    margin: 0;
+}
+
+.Try-now{
+    margin: 50px 0 0 85px;
+    padding: 20px 50px;
+    border-radius: 40px ;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.a-Try-now{
+    text-decoration: none;
+}
+
+
+
+
+.main2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    margin: 100px 8% 100px 8%;
+}
+
+.img-d12{
+    width: 100%;
+}
+.p123{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    line-height: 50px;
+
+}
+.p22{
+    width: 100%;
+    color: rgb(97, 96, 96);
+    line-height: 23px;
+}
+
+
+.d12{
+    padding-top: 10%;
+}
+
+
+.main1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    margin: 50px 8% 150px 8%;
+}
+
+.img-d1{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+
+.d1{
+    padding-top: 20%;
+}
+.p1{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    line-height: 50px;
+}
+.p2{
+    width: 100%;
+    color: rgb(97, 96, 96);
+    line-height: 23px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.footer p{
+    color: rgb(121, 121, 121);
+}
+
+.p12{
+    font-size: 22px;
+    color: rgb(56, 56, 56);
+}
+
+.foot-div1{
+    margin-left: 25px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dml{
+    width: 20px;
+}
+.dm2{
+    width: 15px;
+}
+.dm3{
+    width: 30px;
+    border-radius: 15px;
+}
+.dm4{
+    width: 30px;
+}
+.dm5{
+    width: 18px;
+}
+
+
+
+.mx{
+    position: relative;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.mx a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+.active1{
+    position: absolute;
+    left: 30%;
+    bottom: -9px;
+    font-size: 40px;
+}
+.active2{
+    position: absolute;
+    left: 42%;
+    bottom: 0;
+    font-size: 40px;
+    opacity: 0;
+}
+.active3{
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    font-size: 40px;
+    opacity: 0;
+}
+
+
+.back-img{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px dotted rgb(168, 166, 166);
+    padding-bottom: 50px;
+}
+
+.nochangea{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.mobile-pic{
+    width: 0;
+    opacity: 0;
+}
+.container2{
+    display: none;
+}
+
+@media (max-width:940px){
+    .main1,.main2{
+        grid-template-columns: 1fr;
+    }
+    .div-buts{
+        opacity: 0;
+        cursor: none;
+    }
+    .footer{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer div{
+        margin: 5px auto 5px auto;
+        text-align: center;
+    }
+
+    .foot-div1{
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .div-logo{
+        margin: 0;
+    }
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
-    <title>Home</title>
-</head>
-<body>
-    <div class="header">
-        <div class="div-logo">
-            <a class="nochangea" href="index.html"><img src="IMG/1-01.png" class="img-logo"></a>
-        </div>
+    header{
+        padding-right: 10px;
+    }
+    .d1{
+        margin-left: 20%;
+    }
+    .main2{
+        padding-top: 400px;
+        margin-bottom: 0;
+    }
+    .d12{
+        margin-bottom: 0;
+    }
+    .img-d12{
+        margin-bottom: 0;
+        opacity: 0;
+        width: 0;
+    }
+    .main1{
+        margin-top: 0;
+    }
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 180%;
+    }
+    
+    .subheader{
+        opacity: 1;
+    }
+    .back-img{
+        padding-top: 40%;
+    }
+    .subheader{
+        background-image: url(back2.png);
+        height: 500px;
+    }
+    ul li{
+        list-style-image: url(blackcheck.png);
+        margin-bottom: 2px;
+    }
+    .mx{
+        pointer-events: none;
+    }
+    .div-lang{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .mmm{
+        pointer-events: all;
+        cursor: pointer;
+    }
+    .active1{
+        position: absolute;
+        left: 33%;
+        bottom: -7px;
+        font-size: 40px;
+    }
+    .active2{
+        position: absolute;
+        left: 42%;
+        bottom: 0;
+        font-size: 40px;
+        opacity: 0;
+    }
+    .active3{
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        font-size: 40px;
+        opacity: 0;
+    }
+    .mobile-option-bar{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        opacity: 1;
+        pointer-events: all;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-top: 0;
+        padding-left: 60px;
+        color: black;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+        padding-top:0;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        width: 90%;
+        margin: 0;
+        
+    }
 
-        <div class="div-buts">
-            <div class="mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
-            <div class="mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
-            <div class="mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
-        </div>
+    .item1 .h1, .item2 .h1 ,.item3 .h1{
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 550;
+        width: 90%;
+        color: white;
+        margin: 0;
 
-        <div class="div-lang">
-            <select class="div-but" onchange="changeLanguage(this);">
-                <option>English</option>
-                <option>العربية</option>
-                <option>كوردى</option>
-            </select>
-        </div>
-        <div class="mobile-option-bar">
-             <div class="mdiv1">
-                <button class="mobile-menu-button" onclick="mobilemenu();"><img src="IMG/menubar.png" class="mobile-image"></button>
-                <div class="mobile-div-lang">
-                    <div class="mobile-div-buts">
-                        <div class="mmm1 mmm mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
-                        <div class="mmm2 mmm mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
-                        <div class="mmm3 mmm mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
-                    </div>
-                    <div class="mobile-div-but">
-                    <select class="div-but" onclick="med();">
-                        <option>English</option>
-                        <option>العربية</option>
-                        <option>كوردى</option>
-                    </select>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </div>
+    }
+    .item-abs{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: -100px;
+        left: -20px;
+        text-align: left;
+        color: white;
+    }
+    .item-abs .h1{
+        padding-right: 5%;
+        text-shadow: 1px 1px 1px black;
+    }
+    .list-div{
+        padding: 0;
+        margin: 0;
+        top: 110%;
+    }
+    .container1{
+        display: none;
+    }
 
-    <div class="container container1" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;"> 
-        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel1" data-slide-to="1"></li>
-            <li data-target="#myCarousel1" data-slide-to="2"></li>
-          </ol>
-          
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" style="overflow: visible; height: 800px;">
-            <div class="item active item1">
-              <img src="CSS/backHome.jpg" alt="Los Angeles" class="imgdb" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
-              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white;">
-                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
-              </div>
-              <div class="list-div">
-                <ul>
-                  <li><p>Easy, Fast, Secure Solutions</p></li>
-                  <li><p>Premium Features & Customization</p></li>
-                  <li><p>Unique, Advanced Graphic Designs</p></li>
-                  <li><p>Seamless Website Development</p></li>
-                  <li><p>Innovative Mobile App Creation</p></li>
-                  <li><p>Dynamic Digital Menus for Any Business</p></li>
-                </ul>
-                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-      
-            <div class="item item2">
-              <img class="imgdb" src="IMG/2m.jpg" alt="Chicago" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
-              <div class="item-abs" style="position: absolute; top: 40px; left: 100px; text-align: left; color: white; font-size: 50px;">
-                <h1 class="h1" style="color: #2e3192;">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
-              </div>
-              <div class="list-div">
-                <ul style="color: #2e3192;">
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Creative, Tailored Design Solutions</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Exceptional Features & Flexibility</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Innovative and Stunning Visual Designs</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Responsive and Professional Website Development</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Custom Mobile App Design & Development</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Engaging Digital Content for Every Platform</p></li>
-                </ul>
-                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-      
-            <div class="item item3">
-              <img class="imgdb" src="IMG/3m.jpg" alt="New York" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
-              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white; font-size: 50px;">
-                <h1 class="h1" style="color: #2e3192;">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
-              </div>
-              <div class="list-div">
-                <ul style="color: #2e3192;">
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Easy, Fast, Secure Solutions</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Premium Features & Customization</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Unique, Advanced Graphic Designs</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Seamless Website Development</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Innovative Mobile App Creation</p></li>
-                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Dynamic Digital Menus for Any Business</p></li>
-                </ul>
-                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      
-      <div class="container container2" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;  border-bottom:none;"> 
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel2" data-slide-to="1"></li>
-            <li data-target="#myCarousel2" data-slide-to="2"></li>
-          </ol>
-          
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" style="overflow: visible;">
-            <div class="item active item1">
-              <img src="CSS/backHome.jpg" alt="Los Angeles" class="imgdb" style="width:100%; ">
-              <div class="item-abs" style="position: absolute; top: 10%; left: 15%; text-align: left; color: white;">
-                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
-              </div>
-              <div class="list-div">
-                <ul>
-                  <li><p>Easy, Fast, Secure Solutions</p></li>
-                  <li><p>Premium Features & Customization</p></li>
-                  <li><p>Unique, Advanced Graphic Designs</p></li>
-                  <li><p>Seamless Website Development</p></li>
-                  <li><p>Innovative Mobile App Creation</p></li>
-                  <li><p>Dynamic Digital Menus for Any Business</p></li>
-                </ul>
-                <!--"this button"-->
-                <a href="x.html" class="a-Try-now" style="color: #2e3192; "><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-      
-            <div class="item item2">
-              <img class="imgdb" src="IMG/1mm.jpg" alt="Chicago" style="width:100%;">
-              <div class="item-abs" style="position: absolute; top: 10%; left: 17%; text-align: left; color: white; font-size: 50px;">
-                <h1 class="h1" style="color: #2e3192; text-shadow: none;">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
-              </div>
-              <div class="list-div">
-                <ul style="color: #2e3192; text-shadow: none;">
-                  <li><p>Creative, Tailored Design Solutions</p></li>
-                  <li><p>Exceptional Features & Flexibility</p></li>
-                  <li><p>Innovative and Stunning Visual Designs</p></li>
-                  <li><p>Responsive and Professional Website Development</p></li>
-                  <li><p>Custom Mobile App Design & Development</p></li>
-                  <li><p>Engaging Digital Content for Every Platform</p></li>
-                </ul>
-                <!--"this button"-->
-                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-      
-            <div class="item item3"  style=" border-bottom:none;">
-              <img class="imgdb" src="IMG/1mm.jpg" alt="New York" style="width:100%;">
-              <div class="item-abs" style="position: absolute; top: 10%; left: 15%; text-align: left; color: white; font-size: 50px;">
-                <h1 class="h1" style="color: #2e3192; text-shadow: none;">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
-              </div>
-              <div class="list-div">
-                <ul style="color: #2e3192; text-shadow: none;">
-                  <li><p>Easy, Fast, Secure Solutions</p></li>
-                  <li><p>Premium Features & Customization</p></li>
-                  <li><p>Unique, Advanced Graphic Designs</p></li>
-                  <li><p>Seamless Website Development</p></li>
-                  <li><p>Innovative Mobile App Creation</p></li>
-                  <li><p>Dynamic Digital Menus for Any Business</p></li>
-                </ul>
-                <!--"this button"-->
-                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      
-
-
-    <div class="back-img">
-        <img class="mobile-pic" src="IMG/a1.png">
-        <div class="main2">
-            <div class="d22">
-                <p class="p123">Experience the Future of Dining with QR Menus</p>
-                <p class="p22">
-                    Make the switch to QR menus for a cleaner, more efficient way to present your offerings. Unlike traditional hard menus, QR menus are contactless, hygienic, and easy to update. We specialize in creating fully customizable QR menus that reflect your brand’s unique identity, enhanced with our one-of-a-kind graphic designs. Our expert designers craft visually stunning menus that captivate your customers and elevate their dining experience. With our intuitive platform, you can manage your menu, track customer orders, and access detailed statistics in real-time. Modify your items, prices, and images anytime, and offer special promotions with ease. Plus, enjoy seamless integration with various payment solutions to make transactions quick and secure.</p>
-            </div>
-            <div class="d12">
-                <img class="img-d12" src="IMG/a1.png">
-            </div>
-        </div>
-
-         <div class="main1">
-            <div class="d1">
-                <img class="img-d1" src="IMG/anwar.jpg">
-            </div>
-            <div class="d2">
-                <p class="p1">Transform Your Brand with Unique Graphic Design</p>
-                <p class="p2">
-                    Stand out with stunning, custom graphic designs that capture the essence of your brand. Whether you need logos, marketing materials, or any visual content, we specialize in creating designs that are both unique and impactful. Our team of expert designers works closely with you to ensure every detail aligns with your vision, delivering designs that leave a lasting impression. From vibrant illustrations to clean, modern layouts, we bring your ideas to life with creativity and precision. With our tailored approach, your brand will shine through exceptional visuals that connect with your audience and elevate your business.</p>
-            </div>
-        </div> 
-    </div>
-
-    <div class="footer">
-        <div>
-            <div class="div-logo">
-                <img src="IMG/1-01.png" class="img-logo">
-            </div>
-            <div class="foot-div1">
-                <div><img class="dml dm1" src="IMG/facebook-black-icon.png"></div>
-                <div><img class="dml dm2" src="IMG/twitter.png"></div>
-                <div><a href="https://www.instagram.com/pixeelink/"><img class="dml dm3" src="IMG/png-transparent-app-b-w-instagram-logo-media-popular-social-2018-social-media-black-and-white-logos-icon.png"></a></div>
-                <div><img class="dml dm4" src="IMG/youtube.png"></div>
-                <div><img class="dml dm5" src="IMG/whatsapp-black-logo-icon--24.png"></div>
-            </div>
-        </div>
-        <div>
-            <p class="p12">About</p>
-            <p>Features</p>
-            <p>Benefits</p>
-            <p>News</p>
-            <p>FAQ</p>
-            <p>Get Contact</p>
-        </div>
-        <div>
-            <p class="p12">Solutions</p>
-            <p>QRMenu</p>
-            <p>Advanced WebSites</p>
-            <p>Maintenance</p>
-        </div>
-        <div>
-            <p class="p12">Policies</p>
-            <p>Privacy</p>
-            <p>Cookies</p>
-            <p>Security & Compliance</p>
-        </div>
-    </div>
+    .container2{
+        display: block;
+        pointer-events: all;
+    }
+    .a-Try-now{
+        padding: 20px;
+        margin: 0;
+        margin-top: 100px;
+    
+    }
+    .Try-now{
+        padding: 20px;
+        margin: 0;
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-left: -28px;
+    }
     
 
-    <script src="JS/x3.js"></script>
-</body>
-</html>
+    
+
+}
+@media (min-width:460px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 170%;
+    }
+    
+}
+
+@media (min-width:500px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 150%;
+    }
+    
+}
+
+@media (min-width:540px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 140%;
+    }
+    
+}
+
+@media (min-width:590px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 130%;
+    }
+    
+}
+
+@media (min-width:656px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 120%;
+    }
+    
+}
+
+@media (min-width:735px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 110%;
+    }
+}
+
+@media (min-width:836px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 100%;
+    }
+}
+
+
