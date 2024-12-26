@@ -392,7 +392,7 @@ ul p{
         position: absolute;
         left: 19%;
         top: 0;
-        padding-top: 150%;
+        padding-top: 160%;
     }
     
     .subheader{
@@ -457,7 +457,7 @@ ul p{
     h1{
         margin: 0;
         padding: 0;
-        padding-top: 9%;
+        padding-top:0;
         text-align: center;
         color: white;
         font-size: 30px;
@@ -477,14 +477,16 @@ ul p{
 
     }
     .item-abs{
+        padding: 0;
+        margin: 0;
         position: absolute;
-        top: 0;
-        left: -10px;
+        top: -100px;
+        left: -20px;
         text-align: left;
         color: white;
     }
     .item-abs .h1{
-        padding-right: 10%;
+        padding-right: 5%;
         text-shadow: 1px 1px 1px black;
     }
     .list-div{
@@ -516,6 +518,18 @@ ul p{
 
     
 
+}
+
+@media (min-width:505px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 150%;
+    }
+    
 }
 
 @media (min-width:540px) and (max-width:940px){
