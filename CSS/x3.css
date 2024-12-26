@@ -392,7 +392,7 @@ ul p{
         position: absolute;
         left: 19%;
         top: 0;
-        padding-top: 170%;
+        padding-top: 180%;
     }
     
     .subheader{
@@ -518,6 +518,17 @@ ul p{
 
     
 
+}
+@media (min-width:460px) and (max-width:940px){
+    .mobile-pic{
+        width: 60%;
+        opacity: 1;
+        position: absolute;
+        left: 19%;
+        top: 0;
+        padding-top: 170%;
+    }
+    
 }
 
 @media (min-width:500px) and (max-width:940px){
