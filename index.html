@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/x3.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="div-logo">
+            <a class="nochangea" href="index.html"><img src="IMG/1-01.png" class="img-logo"></a>
+        </div>
+
+        <div class="div-buts">
+            <div class="mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
+            <div class="mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
+            <div class="mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
+        </div>
+
+        <div class="div-lang">
+            <select class="div-but" onchange="changeLanguage(this);">
+                <option>English</option>
+                <option>العربية</option>
+                <option>كوردى</option>
+            </select>
+        </div>
+        <div class="mobile-option-bar">
+             <div class="mdiv1">
+                <button class="mobile-menu-button" onclick="mobilemenu();"><img src="IMG/menubar.png" class="mobile-image"></button>
+                <div class="mobile-div-lang">
+                    <div class="mobile-div-buts">
+                        <div class="mmm1 mmm mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
+                        <div class="mmm2 mmm mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
+                        <div class="mmm3 mmm mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
+                    </div>
+                    <div class="mobile-div-but">
+                    <select class="div-but" onclick="med();">
+                        <option>English</option>
+                        <option>العربية</option>
+                        <option>كوردى</option>
+                    </select>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container container1" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;"> 
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style="overflow: visible; height: 800px;">
+            <div class="item active item1">
+              <img src="CSS/backHome.jpg" alt="Los Angeles" class="imgdb" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white;">
+                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              </div>
+              <div class="list-div">
+                <ul>
+                  <li><p>Easy, Fast, Secure Solutions</p></li>
+                  <li><p>Premium Features & Customization</p></li>
+                  <li><p>Unique, Advanced Graphic Designs</p></li>
+                  <li><p>Seamless Website Development</p></li>
+                  <li><p>Innovative Mobile App Creation</p></li>
+                  <li><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item2">
+              <img class="imgdb" src="IMG/2m.jpg" alt="Chicago" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 40px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: #2e3192;">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: #2e3192;">
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Creative, Tailored Design Solutions</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Exceptional Features & Flexibility</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Innovative and Stunning Visual Designs</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Responsive and Professional Website Development</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Custom Mobile App Design & Development</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Engaging Digital Content for Every Platform</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item3">
+              <img class="imgdb" src="IMG/3m.jpg" alt="New York" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: #2e3192;">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: #2e3192;">
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Easy, Fast, Secure Solutions</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Premium Features & Customization</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Unique, Advanced Graphic Designs</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Seamless Website Development</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Innovative Mobile App Creation</p></li>
+                  <li style="list-style-image: url('CSS/bluecheck.png');"><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="container container2" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;  border-bottom:none;"> 
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style="overflow: visible;">
+            <div class="item active item1">
+              <img src="CSS/backHome.jpg" alt="Los Angeles" class="imgdb" style="width:100%; ">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white;">
+                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              </div>
+              <div class="list-div">
+                <ul>
+                  <li><p>Easy, Fast, Secure Solutions</p></li>
+                  <li><p>Premium Features & Customization</p></li>
+                  <li><p>Unique, Advanced Graphic Designs</p></li>
+                  <li><p>Seamless Website Development</p></li>
+                  <li><p>Innovative Mobile App Creation</p></li>
+                  <li><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="x.html" class="a-Try-now" style="color: #2e3192; "><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item2">
+              <img class="imgdb" src="IMG/1mm.jpg" alt="Chicago" style="width:100%;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: #2e3192;">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: #2e3192;">
+                  <li><p>Creative, Tailored Design Solutions</p></li>
+                  <li><p>Exceptional Features & Flexibility</p></li>
+                  <li><p>Innovative and Stunning Visual Designs</p></li>
+                  <li><p>Responsive and Professional Website Development</p></li>
+                  <li><p>Custom Mobile App Design & Development</p></li>
+                  <li><p>Engaging Digital Content for Every Platform</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="https://github.com/PixeLinkOfficial" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item3"  style=" border-bottom:none;">
+              <img class="imgdb" src="IMG/1mm.jpg" alt="New York" style="width:100%;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: #2e3192;">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: #2e3192;">
+                  <li><p>Easy, Fast, Secure Solutions</p></li>
+                  <li><p>Premium Features & Customization</p></li>
+                  <li><p>Unique, Advanced Graphic Designs</p></li>
+                  <li><p>Seamless Website Development</p></li>
+                  <li><p>Innovative Mobile App Creation</p></li>
+                  <li><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="x.html" class="a-Try-now" style="color: #2e3192;"><button class="Try-now" style="color: #2e3192;">Try now</button></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+
+
+    <div class="back-img">
+        <img class="mobile-pic" src="IMG/a1.png">
+        <div class="main2">
+            <div class="d22">
+                <p class="p123">Experience the Future of Dining with QR Menus</p>
+                <p class="p22">
+                    Make the switch to QR menus for a cleaner, more efficient way to present your offerings. Unlike traditional hard menus, QR menus are contactless, hygienic, and easy to update. We specialize in creating fully customizable QR menus that reflect your brand’s unique identity, enhanced with our one-of-a-kind graphic designs. Our expert designers craft visually stunning menus that captivate your customers and elevate their dining experience. With our intuitive platform, you can manage your menu, track customer orders, and access detailed statistics in real-time. Modify your items, prices, and images anytime, and offer special promotions with ease. Plus, enjoy seamless integration with various payment solutions to make transactions quick and secure.</p>
+            </div>
+            <div class="d12">
+                <img class="img-d12" src="IMG/a1.png">
+            </div>
+        </div>
+
+         <div class="main1">
+            <div class="d1">
+                <img class="img-d1" src="IMG/anwar.jpg">
+            </div>
+            <div class="d2">
+                <p class="p1">Transform Your Brand with Unique Graphic Design</p>
+                <p class="p2">
+                    Stand out with stunning, custom graphic designs that capture the essence of your brand. Whether you need logos, marketing materials, or any visual content, we specialize in creating designs that are both unique and impactful. Our team of expert designers works closely with you to ensure every detail aligns with your vision, delivering designs that leave a lasting impression. From vibrant illustrations to clean, modern layouts, we bring your ideas to life with creativity and precision. With our tailored approach, your brand will shine through exceptional visuals that connect with your audience and elevate your business.</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="footer">
+        <div>
+            <div class="div-logo">
+                <img src="IMG/1-01.png" class="img-logo">
+            </div>
+            <div class="foot-div1">
+                <div><img class="dml dm1" src="IMG/facebook-black-icon.png"></div>
+                <div><img class="dml dm2" src="IMG/twitter.png"></div>
+                <div><a href="https://www.instagram.com/pixeelink/"><img class="dml dm3" src="IMG/png-transparent-app-b-w-instagram-logo-media-popular-social-2018-social-media-black-and-white-logos-icon.png"></a></div>
+                <div><img class="dml dm4" src="IMG/youtube.png"></div>
+                <div><img class="dml dm5" src="IMG/whatsapp-black-logo-icon--24.png"></div>
+            </div>
+        </div>
+        <div>
+            <p class="p12">About</p>
+            <p>Features</p>
+            <p>Benefits</p>
+            <p>News</p>
+            <p>FAQ</p>
+            <p>Get Contact</p>
+        </div>
+        <div>
+            <p class="p12">Solutions</p>
+            <p>QRMenu</p>
+            <p>Advanced WebSites</p>
+            <p>Maintenance</p>
+        </div>
+        <div>
+            <p class="p12">Policies</p>
+            <p>Privacy</p>
+            <p>Cookies</p>
+            <p>Security & Compliance</p>
+        </div>
+    </div>
+    
+
+    <script src="JS/x3.js"></script>
+</body>
+</html>
