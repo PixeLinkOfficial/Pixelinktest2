@@ -515,8 +515,12 @@ ul p{
         margin-top: 10px;
         margin-left: -28px;
     }
-    
-
+    .item1 .h1{
+        color: black;
+    }
+    .item .h1{
+        text-align: left;
+    }
     
 
 }
